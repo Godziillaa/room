@@ -1,0 +1,4 @@
+<view class="bottom-phone">
+  <view class="bottom-icon"><image src="/resources/icon-phone.png"></image></view>
+  <text bindtap="dialNumber" data-phone="{{phone}}">客服热线</text>
+</view>

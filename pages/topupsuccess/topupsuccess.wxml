@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="success-wrap">
+    <view class="success-icon">
+      <image src="/resources/success.png" mode="aspectFit"></image>
+    </view>
+    <view class="">押金充值成功</view>
+  </view>
+  <view class="btn-wrap text-center">
+    <navigator class="btn btn-common">立即体验</navigator>
+  </view>
+</view>

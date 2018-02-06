@@ -1,0 +1,12 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="certify-wrap" bindtap="chooseimg">
+      <view class="up-trigger">+</view>
+      <text>上传学生证</text>
+      <image src="{{idpath}}" mode="aspectFit"></image>
+    </view>
+    <view class="btn-area text-center">
+      <button class="btn btn-common" formType="submit">Submit</button>
+    </view>
+  </form>
+</view>

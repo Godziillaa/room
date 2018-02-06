@@ -1,0 +1,74 @@
+.container{
+  width: 100%;
+  padding: 20rpx 40rpx;
+}
+.order-list{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 20rpx 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.order-list-header{
+  border-bottom: #f3f4f7 solid 1px;
+  padding: 30rpx 40rpx;
+  position: relative;
+  overflow: hidden;
+}
+.order-statu{
+  font-size: 34rpx;
+  display: block;
+}
+.header-amount{
+  position: absolute;
+  font-size: 34rpx;
+  display: block;
+  top: 30rpx;
+  right: 40rpx;
+  font-weight: 400;
+}
+.order-date{
+  display: block;
+  font-size: 26rpx;
+}
+.order-list-detail{
+  padding: 20rpx 40rpx;
+  overflow: hidden;
+}
+.item-line{
+  padding: 10rpx 0;
+}
+.order-list navigator{
+  border-top: #f3f4f7 solid 1px;
+  text-align: center;
+  line-height: 100rpx;
+  color: #a6a6a6;
+}
+.finished .order-list-detail,.checking .order-list-detail{
+  opacity: 0.8;
+}
+.making .order-list-header{
+  background-color: #ff9000;
+  color: #fff;
+}
+.finished .order-list-header{
+  background-color: #fff;
+}
+.finished .header-amount{
+  color: #ff9000;
+}
+.finished .order-date{
+  color: #a6a6a6;
+}
+.checking .order-list-header{
+  background-color: #ff4444;
+  color: #fff;
+}
+.checking navigator{
+  width: 50%;
+  float: left;
+}
+.checking navigator:last-child{
+  color: #ff4444;
+}

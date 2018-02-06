@@ -1,0 +1,18 @@
+<view class="map-wraper">
+  <map id="myMap" longitude="{{lbs.longitude}}" latitude="{{lbs.latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location="true">
+    <cover-view class="circle-nav user-center">
+      <cover-image src="/resources/icon-ucenter.png" data-url="/pages/ucenter/ucenter" bindtap="goLocation"></cover-image>
+    </cover-view>
+    <cover-view class="circle-nav user-msg">
+      <cover-image src="/resources/icon-msg.png" data-url="/pages/sysmsg/sysmsg" bindtap="goLocation"></cover-image>
+      <cover-view class="sup-msg">{{msg}}</cover-view>
+    </cover-view>
+    <cover-view class="circle-nav nav-move" bindtap="moveToLocation">
+      <cover-image src="/resources/icon-center.png"></cover-image>
+    </cover-view>
+    <cover-view class="bottom-view">
+      <cover-view class="current-address" bindtap="getAdd">{{chosen.name}}</cover-view>
+      <cover-view data-url="/pages/test/test?title=navigate" class="search-btn">搜索</cover-view>
+    </cover-view>
+  </map>
+</view>

@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="ucenter-top">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="userlvl">
+      <image class="vip-icon" src="/resources/icon-vip.png" mode="widthFix"></image>
+      <view class="user-lvl">{{lvl}}</view>
+    </view>
+  </view>
+  <view class="item-wrap">
+    <navigator class="item-list menu-list" url="/pages/orders/orders" hover-class="menu-hover">
+      <view class="menu-icon"><image src="/resources/icon-order.png"></image></view>
+      <text>历史订单</text>
+    </navigator>
+    <navigator class="item-list menu-list" url="/pages/mybond/mybond" hover-class="menu-hover">
+      <view class="menu-icon"><image src="/resources/icon-currency.png"></image></view>
+      <text>我的押金</text>
+    </navigator>
+    <navigator class="item-list menu-list" url="/pages/uinfo/uinfo" hover-class="menu-hover">
+      <view class="menu-icon"><image src="/resources/icon-user.png"></image></view>
+      <text>我的信息</text>
+    </navigator>
+    <navigator class="item-list menu-list" url="/pages/pin/pin" hover-class="menu-hover">
+      <view class="menu-icon"><image src="/resources/icon-config.png"></image></view>
+      <text>账号设置</text>
+    </navigator>
+    <view class="item-list menu-list" open-type="share">
+      <view class="menu-icon"><image src="/resources/icon-income.png"></image></view>
+      <text>邀请好友</text>
+      <button class="share-btn" open-type="share">share</button>
+    </view>
+  </view>
+  <include src="/pages/footer/footer.wxml"/>
+</view>

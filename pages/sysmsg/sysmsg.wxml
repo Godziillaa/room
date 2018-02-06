@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="item-wrap">
+    <block wx:for="{{msg}}" wx:key="i" wx:for-item="d">
+      <view class="item-list msg-list {{(d.statu==1)&&'read'}}">
+        <text class="msg-title">{{d.title}}</text>
+        <text class="msg-date">{{d.date}}</text>
+      </view>
+    </block>
+  </view>
+</view>

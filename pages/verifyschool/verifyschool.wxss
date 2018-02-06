@@ -1,0 +1,31 @@
+form{
+  width:100%;
+}
+.certify-wrap{
+  width: 90%;
+  height: 375rpx;
+  background-color: #fff;
+  margin: 40rpx auto;
+  color: #1a1a1a;
+  text-align: center;
+  position: relative;
+  overflow: hidden
+}
+.certify-wrap image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.up-trigger{
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #f3f4f7;
+  margin: 80rpx auto 20rpx auto;
+  font-size: 100rpx;
+  font-weight: 200;
+  line-height: 150rpx;
+}
+.btn-area{
+  margin-top: 60rpx;
+}

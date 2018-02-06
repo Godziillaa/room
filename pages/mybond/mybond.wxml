@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="ucenter-top">
+    <view class="bond">
+      <image class="logo" src="{{logo}}" background-size="cover"></image>
+      <text class="bond-amount text-orange">{{amount}}</text>
+      <text class="text-gray">押金余额</text>
+    </view>
+  </view>
+  <view class="btn-area text-center">
+    <navigator class="btn btn-common" url="/pages/withdraw/withdraw" hover-class="btn-hover">申请退还押金</navigator>
+    <text class="text-gray">押金原渠道返回(1~3个工作日)</text>
+  </view>
+</view>

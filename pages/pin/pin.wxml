@@ -1,0 +1,18 @@
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="item-wrap">
+      <view class="item-list">
+        <input password name="oldpin" maxlength="16" placeholder="旧密码" />
+      </view>
+      <view class="item-list">
+        <input password name="newpin" maxlength="16" placeholder="新密码" />
+      </view>
+      <view class="item-list">
+        <input password name="newpinconfirm" maxlength="16" placeholder="确认新密码" />
+      </view>
+    </view>
+    <view class="btn-area text-center">
+      <button class="btn btn-common" formType="submit">Submit</button>
+    </view>
+  </form>
+</view>

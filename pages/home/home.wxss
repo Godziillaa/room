@@ -1,0 +1,306 @@
+.map-wraper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:0;
+}
+.btn{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+map{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.circle-nav{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+.circle-nav cover-image{
+  width: 100%;
+  height: 100%;
+}
+.user-center{
+  position: absolute;
+  bottom: 250rpx;
+  right: 30rpx;
+  z-index: 10;
+}
+.user-msg{
+  position: absolute;
+  bottom: 150rpx;
+  right: 30rpx;
+  z-index: 10;
+}
+.nav-move{
+  position: absolute;
+  bottom: 150rpx;
+  left: 30rpx;
+  z-index: 10;
+}
+.sup-msg{
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #ff4444;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  font-size: 18rpx;
+  line-height: 32rpx;
+  text-align: center;
+}
+.bottom-view{
+  width:90%;
+  position: absolute;
+  bottom: 20rpx;
+  left: 5%;
+  text-align: center;
+  z-index: 10;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.current-address{
+  width: 70%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.search-btn{
+  width: 32%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #4a4c5c;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10rpx;
+}
+
+.no-room{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+}
+.bg-img{
+  width: 100%;
+  height: 500rpx;
+  display: block;
+}
+.content-wrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.noroom-icon{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto 40rpx auto;
+}
+.content-txt{
+  line-height: 40rpx;
+}
+.btn-common{
+  width: 100%;
+}
+.room-card{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx 0 40rpx;
+}
+.card-content{
+  width: 100%;
+  position: absolute;
+  top: -80rpx;
+  left: 0;
+  box-sizing: border-box;
+  padding: 80rpx 80rpx 0 80rpx;
+}
+.card-bg{
+  width: 100%;
+  height: 650rpx;
+  margin-bottom: -40rpx;
+  display: block;
+}
+.card-poster{
+  width: 100%;
+  height: 260rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+.poster{
+  width: 100%;
+   height: 260rpx; 
+  border-radius: 10rpx;
+}
+.room-code{
+  width: 100%;
+  height: 60rpx;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  border-radius: 0 0 10rpx 10rpx;
+}
+.room-statu{
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #ff9100;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rpx;
+}
+.room-address{
+  line-height: 40rpx;
+  margin: 20rpx 0;
+  display: block;
+}
+.feature{
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  padding-left: 1rpx;
+  margin: 20rpx 0;
+}
+.feature cover-view{
+  width: 25%;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  background-color: #a6a6a6;
+  color: #fff;
+  line-height: 60rpx;
+  border: #fff solid 1rpx;
+  margin-left: -1rpx;
+}
+.price-col{
+  line-height: 60rpx;
+  margin: 20rpx 0;
+}
+.price-col cover-view{
+  display: inline-block;
+  vertical-align: middle;
+}
+.roome-rate{
+  font-size: 40rpx;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.fee-wrap{
+  width: 100%;
+  margin: 20rpx 0;
+}
+.fee-left{
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+.fee-right{
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+.timepassed,.total-cost{
+  font-size: 40rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+.btn-wrap{
+  width: 100%;
+}
+.scan-btn{
+  width: 280rpx;
+  border: #4a4c5c solid 1rpx;
+  float: left;
+}
+.checkout-btn{
+  width: 280rpx;
+  background-color: #4a4c5c;
+  color: #FFF;
+  float: right;
+}
+.path-wrap{
+  width: 100%;
+  display: block;
+  margin: 20rpx 0;
+}
+.checkin-date{
+  float: left;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.room-path{
+  line-height: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  display: block;
+  float: right;
+  border: #4a4c5c solid 2rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  padding: 0 10rpx;
+}
+
+.card-slider{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  z-index: 1000;
+  bottom: 300rpx;
+  overflow: hidden;
+}
+.card-slider cover-image{
+  width: 60rpx;
+  height: 80rpx;
+  margin: 10rpx auto;
+}
+.prev-card{
+  left: 0;
+  right: auto;
+}
+.next-card{
+  left: auto;
+  right: 0;
+}
+.close-card{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  border: #fff solid 3rpx;
+  opacity: 0.8;
+  border-radius: 100%;
+}

@@ -1,0 +1,196 @@
+.map-wraper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:0;
+}
+map{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.no-room{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+}
+.bg-img{
+  width: 100%;
+  height: 550rpx;
+  display: block;
+}
+.content-wrap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.noroom-icon{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto 40rpx auto;
+}
+.content-txt{
+  line-height: 40rpx;
+}
+.btn-common{
+  width: 100%;
+  margin-top: 40rpx;
+}
+.room-card{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx;
+}
+.card-content{
+  width: 100%;
+  position: absolute;
+  top: -80rpx;
+  left: 0;
+  box-sizing: border-box;
+  padding: 80rpx;
+}
+.card-bg{
+  width: 100%;
+  height: 750rpx;
+  display: block;
+}
+.card-poster{
+  width: 100%;
+  height: 260rpx;
+  position: relative;
+  border-radius: 10rpx;
+}
+.poster{
+  width: 100%;
+   height: 260rpx; 
+  border-radius: 10rpx;
+}
+.room-code{
+  width: 100%;
+  height: 60rpx;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  border-radius: 0 0 10rpx 10rpx;
+}
+.room-statu{
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #ff9100;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rpx;
+}
+.room-address{
+  line-height: 40rpx;
+  margin: 40rpx 0 0 0;
+  display: block;
+}
+.feature{
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  padding-left: 1rpx;
+  margin: 40rpx 0;
+}
+.feature cover-view{
+  width: 25%;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  background-color: #a6a6a6;
+  color: #fff;
+  line-height: 60rpx;
+  border: #fff solid 1rpx;
+  margin-left: -1rpx;
+}
+.price-col{
+  line-height: 60rpx;
+  margin: 40rpx 0 20rpx 0;
+}
+.price-col cover-view{
+  display: inline-block;
+  vertical-align: middle;
+}
+.roome-rate{
+  font-size: 40rpx;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+.fee-wrap{
+  width: 100%;
+  margin: 40rpx 0;
+}
+.fee-left{
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+.fee-right{
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+.timepassed,.total-cost{
+  font-size: 60rpx;
+  line-height: 80rpx;
+  font-weight: 700;
+}
+.btn-wrap{
+  width: 100%;
+}
+.scan-btn{
+  width: 280rpx;
+  border: #4a4c5c solid 1rpx;
+  float: left;
+}
+.checkout-btn{
+  width: 280rpx;
+  background-color: #4a4c5c;
+  color: #FFF;
+  float: right;
+}
+.path-wrap{
+  width: 100%;
+  display: block;
+  margin: 20rpx 0;
+}
+.checkin-date{
+  float: left;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.room-path{
+  line-height: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  display: block;
+  float: right;
+  border: #4a4c5c solid 2rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  padding: 0 10rpx;
+}

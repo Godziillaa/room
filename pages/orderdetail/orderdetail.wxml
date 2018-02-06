@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="item-wrap">
+    <view class="item-list">
+      <text class="item-label">订单编号：</text>
+      <text class="item-value">{{detail.orderCode}}</text>
+    </view>
+    <view class="item-list">
+        <text class="item-label">房间编号：</text>
+        <text class="item-value">{{detail.roomCode}}</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">地址：</text>
+        <text class="item-value">{{detail.address}}</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">入住时间：</text>
+        <text class="item-value">{{detail.checkInDate}}</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">结束时间：</text>
+        <text class="item-value">{{detail.checkOutDate}}</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">总计时长：</text>
+        <text class="item-value">{{detail.duration}}</text>
+        <text class="text-gray">（{{detail.price}}）</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">时长费用：</text>
+        <text class="item-value">{{detail.amount}}元</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">清洁费用：</text>
+        <text class="item-value">{{detail.cleaner}}元</text>
+      </view>
+      <view class="item-list">
+        <text class="item-label">订单金额：</text>
+        <text class="item-value text-orange">{{detail.total}}元</text>
+      </view>
+  </view>
+  <view class="btn-wrap text-center">
+    <navigator wx:if="{{detail.statu ==3 }}" class="btn btn-common">立即支付</navigator>
+  </view>
+</view>

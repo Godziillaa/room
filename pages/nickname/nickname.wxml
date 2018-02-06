@@ -1,0 +1,12 @@
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="item-wrap">
+      <view class="item-list">
+        <input name="nickname" maxlength="16" placeholder="输入昵称" />
+      </view>
+    </view>
+    <view class="btn-area text-center">
+      <button class="btn btn-common" formType="submit">Submit</button>
+    </view>
+  </form>
+</view>

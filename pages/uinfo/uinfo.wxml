@@ -1,0 +1,25 @@
+<view class="container">
+  <view class="item-wrap">
+    <navigator class="item-list menu-list" url="" hover-class="menu-hover">
+      <view class="menu-label">头像</view>
+      <view class="menu-avatar"><image src="{{uinfo.avatar||userInfo.avatarUrl}}"></image></view>
+    </navigator>
+    <navigator class="item-list menu-list" url="" hover-class="menu-hover">
+      <view class="menu-label">昵称</view>
+      <text class="menu-value">{{uinfo.nickName||userInfo.nickName}}</text>
+    </navigator>
+    <navigator class="item-list menu-list" url="/pages/verifyid/verifyid?title=navigate" hover-class="menu-hover">
+      <view class="menu-label">实名认证</view>
+      <text class="menu-value">{{uinfo.realname}}</text>
+    </navigator>
+    <navigator class="item-list menu-list" url="/pages/verifyphone/verifyphone?title=navigate" hover-class="menu-hover">
+      <view class="menu-label">手机号</view>
+      <text class="menu-value">{{uinfo.phone}}</text>
+    </navigator>
+    <navigator class="item-list menu-list" url="/pages/verifyschool/verifyschool?title=navigate" hover-class="menu-hover">
+      <view class="menu-label">校园认证</view>
+      <text class="menu-value">{{(uinfo.schoolhood==1)&&'已认证'||'未认证'}}</text>
+    </navigator>
+  </view>
+  <include src="/pages/footer/footer.wxml"/>
+</view>

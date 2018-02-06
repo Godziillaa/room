@@ -1,0 +1,36 @@
+.container{
+  height: 100%;
+  padding-bottom: 160rpx;
+}
+.ucenter-top{
+  width: 100%;
+  background-color: #fff; 
+  padding-bottom: 50rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.bond{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.bond-amount{
+  line-height: 100rpx;
+  font-size: 80rpx;
+  font-weight: bold;
+}
+.btn-area{
+  width: 100%;
+  margin: 60rpx 0;
+}
+.btn-area text{
+  display: block;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}

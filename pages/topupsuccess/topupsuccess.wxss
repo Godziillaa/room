@@ -1,0 +1,19 @@
+.success-wrap{
+  width: 100%;
+  padding: 100rpx 0;
+  text-align: center;
+}
+.success-icon{
+  width: 280rpx;
+  height: 280rpx;
+  background-color: rgba(0,156,255,0.1);
+  border-radius: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50rpx;
+  overflow: hidden;
+}
+.btn-wrap{
+  width: 100%;
+  padding: 40rpx 0;
+}

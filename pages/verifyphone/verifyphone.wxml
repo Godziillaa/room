@@ -1,0 +1,16 @@
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="item-wrap">
+      <view class="item-list">
+        <input name="uname" maxlength="11" placeholder="输入手机号码" />
+        <text class="re-vcode text-blue" bindtap="requestVcode">获取验证码</text>
+      </view>
+      <view class="item-list">
+        <input name="uid" maxlength="6" placeholder="请输入验证码" />
+      </view>
+    </view>
+    <view class="btn-area text-center">
+      <button class="btn btn-common" formType="submit">Submit</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,39 @@
+<view class="container">
+  <swiper indicator-dots="{{banner.indicatorDots}}" indicator-color="{{banner.indicatorColor}}" indicator-active-color="{{banner.activeColor}}" autoplay="{{banner.autoplay}}" interval="{{banner.interval}}" duration="{{banner.duration}}">
+    <block wx:for="{{banner.imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="room-code">{{room.code}}</view>
+  <view class="room-detail">
+    <view class="room-title">
+      <text class="room-address pull-left">{{room.address}}</text>
+      <text class="room-path" data-lng="{{room.longitude}}" data-lat="{{room.latitude}}" data-name="{{room.name}}" bindtap="openpath">导航</text>
+    </view>
+    <view class="base-info">
+      <text>{{room.square}}</text>
+      <text>{{room.room}}</text>
+      <text>{{room.window}}</text>
+      <text>{{room.way}}</text>
+    </view>
+    <view class="room-set">
+      <view wx:if="{{room.setting.wifi}}" class="set-list"><image mode="aspectFit" src="/resources/set-wifi.png"/></view>
+      <view wx:if="{{room.setting.shower}}" class="set-list"><image mode="aspectFit" src="/resources/set-shower.png"/></view>
+      <view wx:if="{{room.setting.table}}" class="set-list"><image mode="aspectFit" src="/resources/set-table.png"/></view>
+      <view wx:if="{{room.setting.tv}}" class="set-list"><image mode="aspectFit" src="/resources/set-tv.png"/></view>
+      <view wx:if="{{room.setting.frez}}" class="set-list"><image mode="aspectFit" src="/resources/set-frez.png"/></view>
+      <view wx:if="{{room.setting.nosmk}}" class="set-list"><image mode="aspectFit" src="/resources/set-nosmk.png"/></view>
+      <view wx:if="{{room.setting.bed}}" class="set-list"><image mode="aspectFit" src="/resources/set-bed.png"/></view>
+    </view>
+    <view class="price-group">
+      <text class="text-orange">¥{{room.rate}}</text> /分钟 + <text class="text-orange">¥{{room.cleaner}}</text> 清洁费
+    </view>
+    <view class="des-group">
+      <text class="text-gray">费用说明</text>
+      <text>{{room.feetip}}</text>
+    </view>
+  </view>
+  <navigator class="bottom-btn" url="">立即订房</navigator>
+</view>

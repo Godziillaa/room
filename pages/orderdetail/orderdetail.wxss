@@ -1,0 +1,4 @@
+.btn-wrap{
+  width: 100%;
+  padding: 40rpx 0;
+}

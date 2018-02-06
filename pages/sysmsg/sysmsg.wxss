@@ -1,0 +1,16 @@
+.msg-list{
+  height: auto;
+  line-height: 60rpx;
+  padding: 20rpx 0;
+}
+.msg-list .msg-title{
+  display: block;
+}
+.msg-list .msg-date{
+  display: block;
+  font-size: 28rpx;
+  color: #a6a6a6;
+}
+.read .msg-title{
+  color: #a6a6a6;
+}

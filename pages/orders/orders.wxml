@@ -1,0 +1,38 @@
+<view class="container">
+  <block wx:for="{{orders}}" wx:key="unique" wx:for-index="idx" wx:for-item="d">
+    <template is="orderTpl" data="{{d}}"/>
+  </block>
+</view>
+<template name="orderTpl">
+  <view class="order-list {{(d.statu == 1) && 'making' || (d.statu == 2) && 'finished' || (d.statu == 3) && 'checking'}}">
+    <view class="order-list-header">
+      <text class="order-statu">{{(d.statu==1) && '使用中' || (d.statu==2) && '已完成' || (d.statu==3) && '未支付'}}</text>
+      <text class="order-date">{{d.orderDate}}</text>
+      <text wx:if="{{d.statu != 1}}" class="header-amount">{{d.bill}}元</text>
+    </view>
+    <view class="order-list-detail">
+      <view class="item-line">
+        <text class="item-label">订单编号：</text>
+        <text class="item-value">{{d.orderCode}}</text>
+      </view>
+      <view class="item-line">
+        <text class="item-label">房间编号：</text>
+        <text class="item-value">{{d.roomCode}}</text>
+      </view>
+      <view class="item-line">
+        <text class="item-label">地址：</text>
+        <text class="item-value">{{d.address}}</text>
+      </view>
+      <view class="item-line">
+        <text class="item-label">入住时间：</text>
+        <text class="item-value">{{d.checkInDate}}</text>
+      </view>
+      <view wx:if="{{d.statu != 1}}" class="item-line">
+        <text class="item-label">结束时间：</text>
+        <text class="item-value">{{d.checkOutDate}}</text>
+      </view>
+    </view>
+    <navigator url="/pages/orderdetail/orderdetail?id={{d.id}}" hover-class="btn-hover">查看详情</navigator>
+    <navigator wx:if="{{d.statu == 3}}" url="/pages/orderdetail/orderdetail" hover-class="btn-hover">立即支付</navigator>
+  </view>
+</template>

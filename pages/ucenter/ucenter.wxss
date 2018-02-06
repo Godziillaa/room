@@ -1,0 +1,57 @@
+.container{
+  height: 100%;
+  padding-bottom: 160rpx;
+}
+.ucenter-top{
+  width: 100%;
+  background-color: #fff; 
+  padding-bottom: 50rpx;
+  text-align: center;
+  overflow: hidden;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  line-height: 50rpx;
+}
+.userlvl{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 10rpx 0 10rpx 44rpx;
+  overflow: hidden;
+}
+.vip-icon{
+  width: 80rpx;
+  position: absolute;
+  top: -3rpx;
+  left: -10rpx;
+}
+.user-lvl{
+  display: inline-block;
+  background-color: #4a4c5c;
+  color: #fff;
+  padding: 0 30rpx 0 30rpx;
+  line-height: 36rpx;
+  font-size: 20rpx;
+  border-radius: 0 20rpx 20rpx 0;
+}
+.menu-list{
+  padding-left: 64rpx;
+}
+.menu-icon{
+  width:44rpx;
+  height: 44rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 0rpx;
+}

@@ -1,0 +1,19 @@
+.container{
+  height: 100%;
+  padding-bottom: 160rpx;
+}
+.menu-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 100rpx;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.menu-value{
+  position: absolute;
+  top: 0;
+  right: 100rpx;
+  color: #a6a6a6;
+}

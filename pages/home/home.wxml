@@ -1,0 +1,96 @@
+<view class="map-wraper">
+  <map id="myMap" longitude="{{lbs.longitude}}" latitude="{{lbs.latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location="true">
+
+    <!--个人中心入口  -->
+    <cover-view wx:if="{{showcard==false}}" class="circle-nav user-center">
+      <cover-image src="/resources/icon-ucenter.png" data-url="/pages/ucenter/ucenter" bindtap="goLocation"></cover-image>
+    </cover-view>
+
+    <!--消息入口  -->
+    <cover-view wx:if="{{showcard==false}}" class="circle-nav user-msg">
+      <cover-image src="/resources/icon-msg.png" data-url="/pages/sysmsg/sysmsg" bindtap="goLocation"></cover-image>
+      <cover-view class="sup-msg">{{msg}}</cover-view>
+    </cover-view>
+    
+    <!--定位入口  -->
+    <cover-view wx:if="{{showcard==false}}" class="circle-nav nav-move" bindtap="moveToLocation">
+      <cover-image src="/resources/icon-center.png"></cover-image>
+    </cover-view>
+
+    <!--搜索框  -->
+    <cover-view wx:if="{{showcard==false}}" class="bottom-view">
+      <cover-view class="current-address" bindtap="getAdd">{{chosen.name}}</cover-view>
+      <cover-view data-url="/pages/search/search?lat={{lbs.latitude}}&lng={{lbs.longitude}}&name={{chosen.name}}" class="search-btn" bindtap="searchroom">search</cover-view>
+    </cover-view>
+
+    <!--无匹配样式  -->
+    <cover-view wx:if="{{nodata==true}}" class="no-room">
+      <cover-image src="/resources/em-bg.png" class="bg-img"></cover-image>
+      <cover-view class="content-wrap text-center">
+        <cover-image src="/resources/icon-noroom.png" class="noroom-icon"></cover-image>
+        <cover-view class="content-txt">很抱歉，当前地图区域内满房</cover-view>
+        <cover-view class="content-txt">请变更区域后再尝试</cover-view>
+        <cover-view class="btn btn-common">推荐其他房源</cover-view>
+      </cover-view>
+    </cover-view>
+
+    <!--卡片样式  -->
+    <cover-view wx:if="{{selected}}" class="room-card">
+      <cover-image src="/resources/card-bg.png" class="card-bg"></cover-image>
+      <cover-view wx:if="{{selected.making==false}}" class="card-content">
+        <cover-view class="card-poster">
+          <cover-image src="{{selected.cover}}" class="poster"></cover-image>
+          <cover-view class="room-code">{{selected.code}}</cover-view>
+          <cover-image src="/resources/icon-cross.png" class="close-card" bindtap="closecard"></cover-image>
+        </cover-view>
+        <cover-view class="room-address">{{index}}{{selected.address}}</cover-view>
+        <cover-view class="feature">
+          <cover-view>{{selected.square}}</cover-view>
+          <cover-view>{{selected.room}}</cover-view>
+          <cover-view>{{selected.window}}</cover-view>
+          <cover-view>{{selected.way}}</cover-view>
+        </cover-view>
+        <cover-view class="price-col">
+          <cover-view class="roome-rate text-orange">{{selected.rate}} </cover-view>
+          <cover-view> 元/分钟 + {{selected.cleaner}}元清洁费</cover-view>
+        </cover-view>
+        <cover-view class="btn-wrap">
+          <cover-view class="btn btn-common" data-url="/pages/roomdetail/roomdetail?id={{selected.id}}" bindtap="goLocation">查看并订房</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view wx:if="{{selected.making==true}}" class="card-content">
+        <cover-view class="card-poster">
+          <cover-image src="{{selected.cover}}" class="poster"></cover-image>
+          <cover-view class="room-statu">进行中</cover-view>
+          <cover-view class="room-code">{{selected.code}}</cover-view>
+          <cover-image src="/resources/icon-cross.png" class="close-card" bindtap="closecard"></cover-image>
+        </cover-view>
+        <cover-view class="room-address">{{index}}{{selected.address}}</cover-view>
+        <cover-view class="path-wrap">
+          <cover-view class="checkin-date text-gray">{{selected.checkindate}}入住</cover-view>
+          <cover-view class="room-path" data-lng="{{selected.longitude}}" data-lat="{{selected.latitude}}" data-name="{{selected.name}}" bindtap="openpath">导航</cover-view>
+        </cover-view>
+        <cover-view class="fee-wrap">
+          <cover-view class="fee-left">
+            <cover-view class="timepassed">{{selected.tp}}</cover-view>
+            <cover-view class="timetip text-gray">累计时长(分钟)</cover-view>
+          </cover-view>
+          <cover-view class="fee-right">
+            <cover-view class="total-cost text-orange">{{selected.total}}</cover-view>
+            <cover-view class="cosetip text-gray">总费用(元)</cover-view>
+          </cover-view>
+        </cover-view>
+        <cover-view class="btn-wrap">
+          <cover-view class="btn scan-btn" bindtap="opendoor">开锁</cover-view>
+          <cover-view class="btn checkout-btn" data-url="/pages/orderdetail/orderdetail?id={{selected.id}}" bindtap="goLocation">结算</cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view wx:if="{{showcard==true && total>1 && index>0}}" class="card-slider prev-card" bindtap="prevcard">
+      <cover-image src="/resources/arrow-left.png"></cover-image>
+    </cover-view>
+    <cover-view wx:if="{{showcard==true && total>1 && index<(total-1)}}" class="card-slider next-card" bindtap="nextcard">
+      <cover-image src="/resources/arrow-right.png"></cover-image>
+    </cover-view>
+  </map>
+</view>
